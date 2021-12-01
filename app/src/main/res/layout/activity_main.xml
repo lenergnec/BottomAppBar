@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/floatingActionBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/material_on_surface_emphasis_high_type"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="674dp"
+        app:menu="@menu/mybottomapp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_anchor="@+id/floatingActionBar"
+        app:layout_anchorGravity="top|center"
+        app:srcCompat="@drawable/addbutton"
+        android:contentDescription="Type here the role of this button"
+        app:rippleColor="@color/white"/>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
